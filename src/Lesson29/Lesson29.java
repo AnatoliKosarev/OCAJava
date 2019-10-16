@@ -11,12 +11,12 @@ public class Lesson29 {
 
     public static void smena(LocalDateTime ldt1, LocalDateTime ldt2, Period p, Duration d) {
         while (ldt1.isBefore(ldt2)) {
-            System.out.println("Работаем с: " + ldt1.format(f1));
+            System.out.print("Работаем с: " + ldt1.format(f1) + "    ");
 
             ldt1 = ldt1.plus(p);
             System.out.println("До: " + ldt1.format(f1));
 
-            System.out.println("Отдыхаем с: " + ldt1.format(f2));
+            System.out.print("Отдыхаем с: " + ldt1.format(f2) + "             ");
 
             ldt1 = ldt1.plus(d);
             System.out.println("До: " + ldt1.format(f2));
